@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img class="imagenalura" src="./images/aluralatam.png">
+        <h1>Encriptador</h1>
+    </header>
+    <div class="contenedor">
+        <div class="contenedor-mensaje">
+            <textarea class="mensaje" name="mensaje" id="idmensaje" onresize="" placeholder="Ingresa un mensaje"></textarea>
+            <div class="botones">
+                <input 
+                id="idencriptar"
+                class="encriptar"
+                type="button",
+                value="Encriptar",
+                onclick="Encriptador()"
+                >
+                <input 
+                id="iddesencriptar"
+                class="desencriptar"
+                type="button",
+                value="Desencriptar",
+                onclick="Desencriptador()"
+                >
+            </div>
+        </div>
+        <div class="contenedor-resultado">
+            <div class="resultado">
+                <p id="texto-enc">esperando mensaje .....</p>
+            </div>
+            <input 
+            id="idcopiar"
+            class="copiar"
+            type="button",
+            value="copiar",
+            onclick="Copiar()"
+            >
+        </div>
+    </div>
+</body>
+<Script src="js/index.js"></Script>
+</html>

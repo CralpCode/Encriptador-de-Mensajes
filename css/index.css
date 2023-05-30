@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+html{
+    font-family: 'Press Start 2P', cursive;
+}
+
+body,html{
+    margin: 0;
+    padding: 0;
+    background-color: #f3f5fc;
+    height: 100vh;
+    width: 100%;
+}
+
+h1{
+    margin: 0;
+}
+
+p{
+    margin: 0;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+header{
+    color: #115c8d;
+    display: flex;
+    border-bottom: solid 1px #3498db;
+    flex-direction: row;
+    justify-content: space-around ;
+    align-items: center;
+    padding: 10px;
+}
+
+.imagenalura{
+    width: 70px;
+    border-radius: 1.5rem;
+}
+
+.contenedor{
+    display: flex;
+    width: 100%;
+    height: 90%; 
+    flex-direction: row;
+}
+
+.copiar{
+    display: none;
+}
+
+.contenedor-mensaje{
+    display: flex;
+    width: 60%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-resultado{
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: center ;
+    flex-direction: column;
+}
+
+.resultado{
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 10px;
+    border: solid 1px #3498db;
+    border-radius: 1.5rem;
+    height: 63%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.resultado > p{
+    word-wrap: break-word;
+    max-width: 100%;
+}
+
+.mensaje{
+    font-family: 'Press Start 2P', cursive;
+    color:#115c8d;
+    padding: 10px;
+    font-size: xx-large;
+    border-color: #3498db;
+    border-radius: 1.5rem;
+    outline: none;
+    width: 70%;
+    height: 60%;
+    resize: none;
+}
+
+.mensaje:hover, .resultado:hover{
+    border: solid 5px #3498db;
+}
+
+.botones{
+    width: 400px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+
+}
+
+.encriptar, .desencriptar, .copiar{
+    font-weight: bolder;
+    color: #ecf0f1;
+    border: solid 3px #3498db;
+    border-radius: 1.5rem;
+    height: 40px;
+    width: 150px;
+    background-color: #3498db;
+}
+
+.copiar{
+    margin-top: 25px;
+    justify-self: end;
+}
+
+#idencriptar:hover, #iddesencriptar:hover, #idcopiar:hover{
+    border: solid 3px #115c8d;
+
+}
+
+#texto-enc{
+    color:#115c8d;
+    font-size: xx-large;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+
+@media (max-width: 768px) {
+
+
+    .contenedor{
+        flex-direction: column;
+        height:auto;
+        
+    }
+
+    .contenedor-mensaje{
+        width: 100%;
+        height: 400px;
+    }
+
+    .mensaje{
+        width: 80%;
+    }
+
+    .mensaje, #texto-enc{
+        font-size: larger;
+    }
+
+    .contenedor-resultado{
+        width: 100%;
+        height: auto;
+        padding-bottom: 10px;
+    }
+    
+    .resultado{
+        width: 80%;
+        height: auto;
+        min-height: 130px;
+        overflow: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    header>h1{
+        font-size: larger;
+    }
+
+    .imagenalura{
+        width: 35px;
+    }
+
+    .botones{
+        justify-content: space-around;
+    }
+
+    .encriptar, .desencriptar, .copiar{
+        height: 50px;
+        width: 110px;
+    }
+    
+}
+
+@media (max-width: 375px) {
+
+    .botones{
+        justify-content: center;
+    }
+
+    .desencriptar{
+        margin-left: 25px;
+    }
+
+    .encriptar, .desencriptar, .copiar{
+        width: auto;
+    }
+    
+}
+
